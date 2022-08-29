@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_getx_utils/getx_dilog_all_perm_view.dart';
 import 'package:get/get.dart';
 
 import 'getx_snackebar_all_perm_view.dart';
@@ -16,7 +17,8 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const GetMaterialApp(
       title: 'GetX',
-      home: SnackBarHomePage(),
+      // home: SnackBarHomePage(),
+      home: DialogHomePage(),
     );
   }
 }
