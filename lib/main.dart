@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_getx_utils/getx_dilog_all_perm_view.dart';
+import 'package:flutter_getx_utils/getx_dialog_all_perm_view.dart';
 import 'package:get/get.dart';
 
+import 'getx_bottom_sheet_perm_view.dart';
 import 'getx_snackebar_all_perm_view.dart';
 
 void main() {
@@ -18,7 +19,8 @@ class MyApp extends StatelessWidget {
     return const GetMaterialApp(
       title: 'GetX',
       // home: SnackBarHomePage(),
-      home: DialogHomePage(),
+      // home: DialogHomePage(),
+      home: BottomSheetPage(),
     );
   }
 }
