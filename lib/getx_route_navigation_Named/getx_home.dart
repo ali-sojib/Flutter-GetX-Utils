@@ -17,37 +17,38 @@ class Home extends StatelessWidget {
               "This is Home Screen",
               style: TextStyle(color: Colors.purpleAccent, fontSize: 30),
             ),
-            SizedBox(
+            const SizedBox(
               height: 8,
             ),
-            RaisedButton(
-              child: Text(
+            ElevatedButton(
+              style: ElevatedButton.styleFrom(primary: Colors.lightBlue),
+              child: const Text(
                 "Next Screen",
-                style: TextStyle(fontSize: 18),
+                style: TextStyle(
+                  fontSize: 18,
+                  color: Colors.white,
+                ),
               ),
-              color: Colors.lightBlue,
-              textColor: Colors.white,
               onPressed: () {
-                Get.toNamed("/nextScreen");
-
-                //Get.toNamed("/nextScreen/1234");
+                // Get.toNamed("/nextScreen");
+                Get.toNamed("/nextScreen/ali_value_for_change_another_screen");
+                //
               },
             ),
-            SizedBox(
+            const SizedBox(
               height: 8,
             ),
-            RaisedButton(
-              child: Text(
+            ElevatedButton(
+              style: ElevatedButton.styleFrom(primary: Colors.lightBlue),
+              child: const Text(
                 "Back to Main",
-                style: TextStyle(fontSize: 18),
+                style: TextStyle(fontSize: 18, color: Colors.white),
               ),
-              color: Colors.lightBlue,
-              textColor: Colors.white,
               onPressed: () {
                 Get.back();
               },
             ),
-            SizedBox(
+            const SizedBox(
               height: 8,
             ),
             // Text(

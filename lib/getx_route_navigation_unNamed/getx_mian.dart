@@ -3,12 +3,12 @@ import 'package:get/get.dart';
 
 import 'getx_home.dart';
 
-class RouteNavigationMain extends StatelessWidget {
+class UnNamedRouteNavigationMain extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
     return Scaffold(
-      appBar: AppBar(title: Text("Navigation")),
+      appBar: AppBar(title: Text("UnNamed Route Navigation")),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -33,13 +33,13 @@ class RouteNavigationMain extends StatelessWidget {
                 // Go to home screen and cancel all previous screens/routes
                 //Get.offAll(Home());
                 // Go the next screen with some data
-                // Get.to(Home(), arguments: "arguments Data from Main");
+                Get.to(Home(), arguments: "arguments Data from Main");
 
                 // Go to next screen and receive data sent from home screen
                 //TODO: its not work
-                var data = await Get.to(Home());
-                //TODO: dat gets null
-                print('printing Received data is :=  $data');
+                // var data = await Get.to(Home());
+                // //TODO: dat gets null
+                // print('printing Received data is :=  $data');
               },
             )
           ],

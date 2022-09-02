@@ -50,10 +50,10 @@ class Home extends StatelessWidget {
             const SizedBox(
               height: 8,
             ),
-            // Text(
-            //   "${Get.arguments}",
-            //   style: TextStyle(color: Colors.green, fontSize: 20),
-            // )
+            Text(
+              "${Get.arguments}",
+              style: TextStyle(color: Colors.green, fontSize: 20),
+            )
           ],
         ),
       ),
