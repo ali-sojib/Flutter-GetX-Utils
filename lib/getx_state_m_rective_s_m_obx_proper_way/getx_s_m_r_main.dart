@@ -1,12 +1,11 @@
 import 'package:get/get.dart';
 import 'package:flutter/material.dart';
 
-class StateManagementReactiveStateManagerObxUndefindDataTypes
-    extends StatelessWidget {
-  var student = Student();
+import 'my_controller.dart';
 
-  // For making the entire class observable
-  //final  student=Student( name:"tom",age:25).obs;
+class IntroducingGextController extends StatelessWidget {
+  // Create the instance of Controller
+  MyController myController = Get.put(MyController());
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
@@ -18,7 +17,7 @@ class StateManagementReactiveStateManagerObxUndefindDataTypes
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Obx(() => Text(
-                  "Name  is ${student.name.value}",
+                  "Name  is ${myController.student.value.name}",
                   style: TextStyle(fontSize: 25),
                 )),
             const SizedBox(
@@ -28,11 +27,9 @@ class StateManagementReactiveStateManagerObxUndefindDataTypes
               child: Text("Upper"),
               onPressed: () {
                 //If individual variables are observable
-                student.name.value = student.name.value.toUpperCase();
+                // myController.convertToUpperCase();
                 // If entire class is observable
-                // student.update((student) {
-                //   student.name=student.name.toString().toUpperCase();
-                // });
+                myController.convertUpperCase();
               },
             ),
             const SizedBox(
@@ -42,11 +39,9 @@ class StateManagementReactiveStateManagerObxUndefindDataTypes
               child: Text("Lower"),
               onPressed: () {
                 //If individual variables are observable
-                student.name.value = student.name.value.toLowerCase();
+                // myController.convertToLowerCase();
                 // If entire class is observable
-                // student.update((student) {
-                //   student.name=student.name.toString().toLowerCase();
-                // });
+                myController.convertLowerCase();
               },
             ),
           ],
@@ -54,18 +49,4 @@ class StateManagementReactiveStateManagerObxUndefindDataTypes
       ),
     );
   }
-}
-
-class Student {
-  /* Classes can be made observable by making individuals variables Rx
-  or by making the entire class observable.
-   */
-  // Individuals variables Rx
-  var name = "Tom ali eight".obs;
-  var age = 25.obs;
-
-// To make the entire class observable
-// var name;
-// var age;
-// Student({this.name, this.age});
 }
