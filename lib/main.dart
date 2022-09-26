@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
+import 'getx_reactive_s_m_GetX_ControllerType/getx_r_s_m_controller_type.dart';
 import 'getx_route_navigation_Named/getx_home.dart';
 import 'getx_route_navigation_Named/getx_mian_named.dart';
 import 'getx_route_navigation_Named/getx_next_screen.dart';
@@ -20,15 +21,15 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
-      title: 'GetX',
-      // home: SnackBarHomePage(),
-      // home: DialogHomePage(),
-      // home: BottomSheetPage(),
-      // home: UnNamedRouteNavigationMain(),
-      /*
+        title: 'GetX',
+        // home: SnackBarHomePage(),
+        // home: DialogHomePage(),
+        // home: BottomSheetPage(),
+        // home: UnNamedRouteNavigationMain(),
+        /*
       Named route navigaiton utils
       */
-      /*
+        /*
         title: "Navigation",
         initialRoute: "/",
         defaultTransition: Transition.zoom,
@@ -50,13 +51,14 @@ class MyApp extends StatelessWidget {
         ],
         // unknownRoute: GetPage(name: '/notfound', page: () => UnknownRoute()),
       */
-      // home: NamedRouteNavigationMain(),
-      //7th
-      // home: StateManagementReactiveStateManagerObxPredefinedDataTypes(),
-      //8th
-      home: StateManagementReactiveStateManagerObxUndefindDataTypes(),
-      //9th
-      // home: IntroducingGextController(),
-    );
+        // home: NamedRouteNavigationMain(),
+        //7th
+        // home: StateManagementReactiveStateManagerObxPredefinedDataTypes(),
+        //8th
+        // home: StateManagementReactiveStateManagerObxUndefindDataTypes(),
+        //9th
+        // home: IntroducingGextController(),
+        //10th
+        home: GetXControllerTypeMain());
   }
 }
