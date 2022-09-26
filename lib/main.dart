@@ -4,7 +4,8 @@ import 'package:get/get.dart';
 import 'getx_route_navigation_Named/getx_home.dart';
 import 'getx_route_navigation_Named/getx_mian_named.dart';
 import 'getx_route_navigation_Named/getx_next_screen.dart';
-import 'st_mn_reactive_state_manager_obx.dart';
+import 'getx_state_m_reactive_state_manager_obx_predefind_data_types.dart';
+import 'getx_state_m_reactive_state_manager_obx_undefind_data_types.dart';
 
 void main() {
   runApp(const MyApp());
@@ -49,7 +50,10 @@ class MyApp extends StatelessWidget {
         // unknownRoute: GetPage(name: '/notfound', page: () => UnknownRoute()),
       */
       // home: NamedRouteNavigationMain(),
-      home: StateManagementReactiveStateManagerObx(),
+
+      // home: StateManagementReactiveStateManagerObxPredefinedDataTypes(),
+
+      home: StateManagementReactiveStateManagerObxUndefindDataTypes(),
     );
   }
 }

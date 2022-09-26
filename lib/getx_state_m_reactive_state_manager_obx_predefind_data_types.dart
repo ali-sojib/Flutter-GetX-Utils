@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-// state_management_reactive State Manager Obx
-
+class StateManagementReactiveStateManagerObxPredefinedDataTypes
+    extends StatelessWidget {
+  // state_management_reactive State Manager Obx
+  // Predefind Data types
 /* If we want that every time the value of count variable changes
   then all the widgets which uses the count variable must update itself
   then the count variable must be reactive or observable and to make it
@@ -11,7 +13,7 @@ import 'package:get/get.dart';
   Obx(() => Your widget which uses Rx)
   The widget will only update if and only if the Rx variable value changes.
   Other ways of making the variable Rx
-  
+
   1 - The first is using Rx{Type}.
   ===============================
     initial value is recommended, but not mandatory
@@ -21,7 +23,7 @@ import 'package:get/get.dart';
     final balance = RxDouble(0.0);
     final items = RxList<String>([]);
     final myMap = RxMap<String, int>({});
-    
+
   2- use Darts Generics, Rx<Type>
   ===============================
     final name = Rx<String>('');
@@ -34,8 +36,6 @@ import 'package:get/get.dart';
     // Custom classes - it can be any class, literally
     final user = Rx<User>();
   */
-
-class StateManagementReactiveStateManagerObx extends StatelessWidget {
   var count = 0.obs;
 
   void increment() {
