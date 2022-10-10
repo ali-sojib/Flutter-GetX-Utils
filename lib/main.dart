@@ -3,6 +3,7 @@ import 'package:get/get.dart';
 
 import 'getx_reactive_s_m_GetX_ControllerType/getx_r_s_m_controller_type.dart';
 import 'getx_reactive_s_m_GetxBuilder_ControllerType/getx_builder_main.dart';
+import 'getx_reactive_s_m_GetxBuilder_Controller_Life_cycle/getx_builder_life_cycle_main.dart';
 import 'getx_route_navigation_Named/getx_home.dart';
 import 'getx_route_navigation_Named/getx_mian_named.dart';
 import 'getx_route_navigation_Named/getx_next_screen.dart';
@@ -66,7 +67,9 @@ class MyApp extends StatelessWidget {
       insted of call every time update() when you need to update UI
       GetXBuilder will auto update full Ui
       */
-      home: GetXBuilderControllerType(),
+      // home: GetXBuilderControllerType(),
+      //12th
+      home:  GetBuilderLifeCycle(),
     );
   }
 }
