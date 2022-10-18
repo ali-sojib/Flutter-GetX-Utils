@@ -18,26 +18,6 @@ class GetBuilderLifeCycle extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            // GetBuilder<LifeCycleController>(
-            //   // init: MyControllerGetXBuilder(),
-            //   builder: (controller) {
-            //     return Text(
-            //       "life cycle \n The value is  ${controller.count}",
-            //       style: const TextStyle(fontSize: 25),
-            //     );
-            //   },
-            // ),
-            // const SizedBox(
-            //   height: 16,
-            // ),
-            // ElevatedButton(
-            //   child: const Text("Increment"),
-            //   onPressed: () {
-            //     controller.increment();
-            //     // If instance of controller not created at top
-            //     // Get.find<MyControllerGetXBuilder>().increment();
-            //   },
-            // ),
             GetBuilder<LifeCycleController>(
               // initState: (data) => controller.increment(),
               // dispose: (_) => controller.cleanUpTask(),
