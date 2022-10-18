@@ -28,9 +28,7 @@ class MyApp extends StatelessWidget {
       // home: DialogHomePage(),
       // home: BottomSheetPage(),
       // home: UnNamedRouteNavigationMain(),
-      /*
-      Named route navigaiton utils
-      */
+      ///Named route navigaiton utils
       /*
         title: "Navigation",
         initialRoute: "/",
@@ -54,22 +52,24 @@ class MyApp extends StatelessWidget {
         // unknownRoute: GetPage(name: '/notfound', page: () => UnknownRoute()),
       */
       // home: NamedRouteNavigationMain(),
-      //7th
+      ///7th
       // home: StateManagementReactiveStateManagerObxPredefinedDataTypes(),
-      //8th
+      ///8th
       // home: StateManagementReactiveStateManagerObxUndefindDataTypes(),
-      //9th
+      ///9th
       // home: IntroducingGextController(),
-      //10th
+      ///10th
       // home: GetXControllerTypeMain(),
-      /*11th
+      /**
+      11th
       only deference no need to put obs on variable
-      insted of call every time update() when you need to update UI
+      instead of call every time update() when you need to update UI
       GetXBuilder will auto update full Ui
-      */
+      **/
       // home: GetXBuilderControllerType(),
-      //12th
-      home:  GetBuilderLifeCycle(),
+      /// 12th
+      /// NOT WORKED !!!!!!!!!!!!!
+      home: GetBuilderLifeCycle(),
     );
   }
 }
