@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_getx_utils/getx_bottom_sheet_perm_view.dart';
+import 'package:flutter_getx_utils/getx_dialog_all_perm_view.dart';
+import 'package:flutter_getx_utils/getx_route_navigation_unNamed/getx_mian.dart';
+import 'package:flutter_getx_utils/getx_snackebar_all_perm_view.dart';
 import 'package:get/get.dart';
 
 import 'getx_reactive_s_m_GetX_ControllerType/getx_r_s_m_controller_type.dart';
@@ -31,6 +35,7 @@ class MyApp extends StatelessWidget {
       // home: UnNamedRouteNavigationMain(),
       ///Named route navigaiton utils
       /*
+      ///https://www.youtube.com/watch?v=ykGNGm7zf2Y&list=PLCaS22Sjc8YR32XmudgmVqs49t-eKKr9t&index=6
         title: "Navigation",
         initialRoute: "/",
         defaultTransition: Transition.zoom,

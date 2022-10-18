@@ -8,6 +8,7 @@ class BottomSheetPage extends StatefulWidget {
   State<BottomSheetPage> createState() => _BottomSheetPageState();
 }
 
+///https://www.youtube.com/watch?v=HalUV10ppLs&list=PLCaS22Sjc8YR32XmudgmVqs49t-eKKr9t&index=4
 class _BottomSheetPageState extends State<BottomSheetPage> {
   @override
   Widget build(BuildContext context) {
@@ -29,9 +30,7 @@ class _BottomSheetPageState extends State<BottomSheetPage> {
                     child: Wrap(
                       children: <Widget>[
                         ListTile(
-                            leading: Icon(Icons.wb_sunny_outlined),
-                            title: Text('Light Theme'),
-                            onTap: () => {Get.changeTheme(ThemeData.light())}),
+                            leading: Icon(Icons.wb_sunny_outlined), title: Text('Light Theme'), onTap: () => {Get.changeTheme(ThemeData.light())}),
                         ListTile(
                           leading: Icon(Icons.wb_sunny),
                           title: Text('Dark Theme'),
@@ -44,10 +43,7 @@ class _BottomSheetPageState extends State<BottomSheetPage> {
                   isDismissible: true,
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(10.0),
-                    side: const BorderSide(
-                        color: Colors.white,
-                        style: BorderStyle.solid,
-                        width: 2.0),
+                    side: const BorderSide(color: Colors.white, style: BorderStyle.solid, width: 2.0),
                   ),
                   barrierColor: Colors.greenAccent.shade100,
                   elevation: 10,

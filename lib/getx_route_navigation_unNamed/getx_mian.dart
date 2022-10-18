@@ -4,6 +4,8 @@ import 'package:get/get.dart';
 import 'getx_home.dart';
 
 class UnNamedRouteNavigationMain extends StatelessWidget {
+  ///https://www.youtube.com/watch?v=7_Ze16_tMBE&list=PLCaS22Sjc8YR32XmudgmVqs49t-eKKr9t&index=5
+
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
