@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import 'my_controller_tenth.dart';
+import 'controller_tenth.dart';
 
 class GetXControllerTypeMain extends StatelessWidget {
   // If init property is not used in GetX<Type of Controller> then
@@ -27,7 +27,7 @@ class GetXControllerTypeMain extends StatelessWidget {
                 );
               },
             ),
-            SizedBox(
+            const SizedBox(
               height: 16,
             ),
             ElevatedButton(
