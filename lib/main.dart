@@ -15,6 +15,7 @@ import 'getx_route_navigation_Named/getx_next_screen.dart';
 import 'getx_state_m_reactive_state_manager_obx_predefind_data_types.dart';
 import 'getx_state_m_reactive_state_manager_obx_undefind_data_types.dart';
 import 'getx_state_m_rective_s_m_obx_proper_way/getx_s_m_r_main.dart';
+import 'getx_workeres/main_workers.dart';
 
 void main() {
   runApp(const MyApp());
@@ -77,7 +78,9 @@ class MyApp extends StatelessWidget {
       /// NOT WORKED !!!!!!!!!!!!!
       // home: GetBuilderLifeCycle(),
       ///13th
-      home: GetBuilderUniqueId(),
+      // home: GetBuilderUniqueId(),
+      ///14th
+      home: UnderstandingGetXWorkers(),
     );
   }
 }
