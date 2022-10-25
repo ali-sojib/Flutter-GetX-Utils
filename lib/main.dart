@@ -6,6 +6,7 @@ import 'package:flutter_getx_utils/getx_route_navigation_unNamed/getx_mian.dart'
 import 'package:flutter_getx_utils/getx_snackebar_all_perm_view.dart';
 import 'package:get/get.dart';
 
+import 'getx_dependency_injection/main_dependency_injeciton.dart';
 import 'getx_internationalization_lan/main_internationalization_lan.dart';
 import 'getx_reactive_s_m_GetX_ControllerType/getx_r_s_m_controller_type.dart';
 import 'getx_reactive_s_m_GetxBuilder_ControllerType/getx_builder_main.dart';
@@ -84,10 +85,12 @@ class MyApp extends StatelessWidget {
       ///14th
       // home: UnderstandingGetXWorkers(),
       ///15th
-      translations: Messages(), // your translations
-      locale: Locale('en', 'US'), // default locale // to get device locale Get.deviceLocale
-      fallbackLocale: Locale('en', 'US'), // fallback locale if wrong locale found
-      home: GetXInternationalizationLan(),
+      // translations: Messages(), // your translations
+      // locale: Locale('en', 'US'), // default locale // to get device locale Get.deviceLocale
+      // fallbackLocale: Locale('en', 'US'), // fallback locale if wrong locale found
+      // home: GetXInternationalizationLan(),
+      ///16
+      home: GetXDependencyInjection(),
     );
   }
 }
