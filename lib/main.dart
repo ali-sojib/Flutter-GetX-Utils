@@ -6,6 +6,8 @@ import 'package:flutter_getx_utils/getx_route_navigation_unNamed/getx_mian.dart'
 import 'package:flutter_getx_utils/getx_snackebar_all_perm_view.dart';
 import 'package:get/get.dart';
 
+import 'GetX_service/getx_service_controller.dart';
+import 'GetX_service/getx_service_main.dart';
 import 'getx_dependency_injection/main_dependency_injeciton.dart';
 import 'getx_internationalization_lan/main_internationalization_lan.dart';
 import 'getx_reactive_s_m_GetX_ControllerType/getx_r_s_m_controller_type.dart';
@@ -20,8 +22,18 @@ import 'getx_state_m_reactive_state_manager_obx_undefind_data_types.dart';
 import 'getx_state_m_rective_s_m_obx_proper_way/getx_s_m_r_main.dart';
 import 'getx_workeres/main_workers.dart';
 
-void main() {
+// void main() {
+//   runApp(const MyApp());
+// }
+///17
+void main() async{
+  await initServices();
   runApp(const MyApp());
+}
+Future<void> initServices() async {
+  print('starting services ...');
+  await Get.putAsync<GetXServiceController>(() async => await GetXServiceController());
+  print('All services started...');
 }
 
 class MyApp extends StatelessWidget {
@@ -90,7 +102,10 @@ class MyApp extends StatelessWidget {
       // fallbackLocale: Locale('en', 'US'), // fallback locale if wrong locale found
       // home: GetXInternationalizationLan(),
       ///16
-      home: GetXDependencyInjection(),
+      // home: GetXDependencyInjection(),
+      ///17
+      home: GetXServiceView()
+
     );
   }
 }
